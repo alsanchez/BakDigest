@@ -1,0 +1,4 @@
+al_sanchez_bak_digest:
+    resource: "@AlSanchezBakDigestBundle/Resources/config/routing.yml"
+    prefix:   /
+

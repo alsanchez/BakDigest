@@ -1,0 +1,17 @@
+AlSanchez\BakDigestBundle\Entity\BackupNotification:
+    type: entity
+    table: backup_notification
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        date:
+            type: datetime
+            length: 200
+        successful:
+            type: boolean
+    manyToOne:
+        backup:
+            targetEntity: AlSanchez\BakDigestBundle\Entity\Backup
+            inversedBy: notifications

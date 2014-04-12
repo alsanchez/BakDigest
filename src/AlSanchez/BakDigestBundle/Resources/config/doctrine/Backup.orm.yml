@@ -1,0 +1,20 @@
+AlSanchez\BakDigestBundle\Entity\Backup:
+    type: entity
+    table: backup
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            length: 200
+        description:
+            type: string
+            nullable: true
+        frequency:
+            type: integer
+    oneToMany:
+      notifications:
+        targetEntity: AlSanchez\BakDigestBundle\Entity\BackupNotification
+        mappedBy: backup
