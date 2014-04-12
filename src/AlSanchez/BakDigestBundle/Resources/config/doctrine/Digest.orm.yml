@@ -1,0 +1,25 @@
+AlSanchez\BakDigestBundle\Entity\Digest:
+    type: entity
+    table: digest
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        periodicity:
+            type: integer
+        email:
+            type: string
+        last_delivery:
+            type: datetime
+    manyToMany:
+        backups:
+            targetEntity: AlSanchez\BakDigestBundle\Entity\Backup
+            joinTable:
+                name: digest_backup
+                joinColumns:
+                    backup_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    group_id:
+                        referencedColumnName: id
