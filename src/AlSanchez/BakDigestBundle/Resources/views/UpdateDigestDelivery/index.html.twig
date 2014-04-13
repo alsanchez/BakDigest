@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Backup name</th>
+                <th>Status</th>
+                <th>Last backup date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for backup in backups %}
+                <tr>
+                    <td>{{ backup.Name }}</td>
+                    <td>{{ backup.Status }}</td>
+                    <td>
+                        {% if backup.LastBackup is null %}
+                            (Never)
+                        {% else %}
+                            {{ backup.LastBackup|date('c') }}
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>

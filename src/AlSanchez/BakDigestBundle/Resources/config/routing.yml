@@ -12,3 +12,8 @@ alsanchez_bakdigest_create_digest:
   path: /digest
   defaults: { _controller: AlSanchezBakDigestBundle:CreateDigest:index }
   methods: [POST]
+
+alsanchez_bakdigest_update_digest_delivery:
+  path: /digest/{digestId}/delivery
+  defaults: { _controller: AlSanchezBakDigestBundle:UpdateDigestDelivery:index }
+  methods: [PUT]

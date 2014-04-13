@@ -85,4 +85,20 @@ class Backup
     {
         $this->name = $name;
     }
+
+    /**
+     * @return BackupNotification[]
+     */
+    public function getNotifications()
+    {
+        return $this->notifications;
+    }
+
+    /**
+     * @param BackupNotification[] $notifications
+     */
+    public function setNotifications($notifications)
+    {
+        $this->notifications = $notifications;
+    }
 } 
