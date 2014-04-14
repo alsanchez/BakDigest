@@ -18,8 +18,10 @@ AlSanchez\BakDigestBundle\Entity\Digest:
             joinTable:
                 name: digest_backup
                 joinColumns:
+                    digest_id:
+                        referencedColumnName: id
+                        onDelete: "CASCADE"
+                inverseJoinColumns:
                     backup_id:
                         referencedColumnName: id
-                inverseJoinColumns:
-                    group_id:
-                        referencedColumnName: id
+                        onDelete: "CASCADE"
