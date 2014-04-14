@@ -6,6 +6,12 @@
       <sourceFolder url="file://$MODULE_DIR$/web" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/app/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jms/metadata" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jms/parser-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jms/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jms/serializer-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpcollection/phpcollection" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpoption/phpoption" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
@@ -16,6 +22,27 @@
         <JAVADOC />
         <SOURCES>
           <root url="phar://$MODULE_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/phpcollection/phpcollection" />
+          <root url="file://$MODULE_DIR$/vendor/jms/serializer" />
+          <root url="file://$MODULE_DIR$/vendor/jms/parser-lib" />
+          <root url="file://$MODULE_DIR$/vendor/jms/serializer-bundle" />
+          <root url="file://$MODULE_DIR$/vendor/phpoption/phpoption" />
+          <root url="file://$MODULE_DIR$/vendor/jms/metadata" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/phpcollection/phpcollection" />
+          <root url="file://$MODULE_DIR$/vendor/jms/serializer" />
+          <root url="file://$MODULE_DIR$/vendor/jms/parser-lib" />
+          <root url="file://$MODULE_DIR$/vendor/jms/serializer-bundle" />
+          <root url="file://$MODULE_DIR$/vendor/phpoption/phpoption" />
+          <root url="file://$MODULE_DIR$/vendor/jms/metadata" />
         </SOURCES>
       </library>
     </orderEntry>

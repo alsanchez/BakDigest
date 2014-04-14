@@ -8,6 +8,11 @@ alsanchez_bakdigest_delete_backup:
   defaults: { _controller: AlSanchezBakDigestBundle:DeleteBackup:index }
   methods: [DELETE]
 
+alsanchez_bakdigest_list_backups:
+  path: /backup
+  defaults: { _controller: AlSanchezBakDigestBundle:ListBackups:index }
+  methods: [GET]
+
 alsanchez_bakdigest_create_backup_notification:
   path: /backup/{backupId}/notification
   defaults: { _controller: AlSanchezBakDigestBundle:CreateBackupNotification:index }

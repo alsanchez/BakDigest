@@ -3,19 +3,38 @@
 namespace AlSanchez\BakDigestBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
+/** @var Groups */
+use JMS\Serializer\Annotation\Groups;
 
 class Backup
 {
-    /** @var int */
+    /**
+     * @Groups({"list"})
+     * @var int
+     */
     protected $id;
-    /** @var string */
+
+    /**
+     * @Groups({"list"})
+     * @var string
+     */
     protected $name;
-    /** @var string */
+
+    /**
+     * @Groups({"list"})
+     * @var string
+     */
     protected $description;
-    /** @var int */
+
+    /**
+     * @Groups({"list"})
+     * @var int
+     */
     protected $frequency;
+
     /** @var BackupNotification[] */
     protected $notifications;
+
 
     function __construct()
     {
