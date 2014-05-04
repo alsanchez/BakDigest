@@ -28,6 +28,11 @@ alsanchez_bakdigest_delete_digest:
   defaults: { _controller: AlSanchezBakDigestBundle:DeleteDigest:index }
   methods: [DELETE]
 
+alsanchez_bakdigest_list_digests:
+  path: /digest
+  defaults: { _controller: AlSanchezBakDigestBundle:ListDigests:index }
+  methods: [GET]
+
 alsanchez_bakdigest_update_digest_delivery:
   path: /digest/{digestId}/delivery
   defaults: { _controller: AlSanchezBakDigestBundle:UpdateDigestDelivery:index }
